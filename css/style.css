@@ -1,6 +1,6 @@
 .container{
     margin:  0 auto;
-    padding: 15px;
+    padding: 10px;
     border:  1px solid #333;
 }
 .image-slider-wrapper{
@@ -18,55 +18,56 @@
 .image_slider li{
     position:relative;
     max-width: 100%;
-    float:left;
     list-style: none;
     left: 0;
 }
 
-.nav-box{
+.navigation{
     margin: 15px 0 0;
     height: 60px;
 }
-.nav-img-box{
-    position: absolute;
-    width: 100%;
-    text-align: center;
+.image-box{
+    position: relative;
     overflow: hidden;
-    padding: 0 30px;
+    height: 100%;
+    padding: 0;
+    margin: 0 22px;
+}
+.all-images{
+    position: absolute;
+    text-align: center;
+    padding: 0;
     margin: 0;
 }
-.nav-img-box img{
+.all-images img{
     height: 60px;
     cursor: pointer;
 }
-.nav-img-box img:hover{
+.all-images img:hover{
 
 }
-.nav-img-box li{
+.all-images li{
     float: left;
+    height:60px;
+    width: 80px;
+    border-left: 1px solid red;
     list-style: none;
     overflow: hidden;
-    margin-left: 7px;
+    margin-left: 3px;
 }
-.nav-img-box li:first-child{
+.all-images li:first-child{
     margin-left: 0;
-}
-.nav-buttons{
-    position: relative;
-    height: 60px;
 }
 .but{
     width: 20px;
     height: 100%;
-    opacity: 0.2;
+    opacity: 0.5;
     cursor: pointer;
-}
-.but:hover{
-    opacity: 0.4;
 }
 .left{
     float: left;
     background: #333 url('../images/left.png') no-repeat center;
+    opacity: 0.1;
 }
 .right{
     float: right;
